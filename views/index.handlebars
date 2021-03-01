@@ -1,0 +1,42 @@
+<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="centerThis">Eat Da Burger</h1>
+            </div>
+            <div class="col-md-4 centerImg">
+                <img src="./assets/burger.png">
+            </div>  
+        </div>  
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Eat Deez Burgers</h2>
+                    <ul>
+                        {{!-- runs thru the burgers table --}}
+                        {{#each burgers}}
+                        {{!-- will not render burgers with a true value for devoured --}}
+                        {{#unless devoured}}
+                        {{!-- this expression will insert a 'partial handlebars template' --}}
+                        {{> burger/deez_burgers-block devoured = false }}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+            </div>
+            <div class="col-md-5">
+                <h2>You ate the burger</h2>
+                    <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        {{> burger/devoured-block devoured = true}}
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+            </div>
+        </div>
+        <div class="row">
+            <form id='create-form'>
+                <label for="berg">What kind of Burger?</label>
+                <input type='text' name="burger" id="berg"></input>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
