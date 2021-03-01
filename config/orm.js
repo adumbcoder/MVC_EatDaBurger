@@ -1,10 +1,8 @@
 const connection = require('./connection.js');
-const connect = require ('./connection.js');
-
 
 const orm = {
-all(tableInput, cb) {
-    const query = `SELECT * FROM ${tableInput}`;
+all(table, cb) {
+    const query = `SELECT * FROM ${table}`;
     connection.query(query, (err, result) => {
         if(err) {
             throw err;

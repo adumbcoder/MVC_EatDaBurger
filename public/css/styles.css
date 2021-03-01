@@ -1,3 +1,7 @@
+/* 2B2D42, 8D99AE, EDF2F4, EF233C, D90429*/
+body {
+    background-color: aliceblue;
+}
 
 img {
     width: 25vh;
@@ -7,6 +11,8 @@ img {
     padding: 50px;
     text-align: center;
     font-size: 12vh;
+    border: 1px solid red;
+    
 }
 
 .centerImg {

@@ -1,4 +1,7 @@
-
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (event) {
+    console.info('DOM loaded');
+  }
 
 //Create logic
 const createBergBtn = document.getElementById('create-form');
@@ -8,7 +11,7 @@ if (createBergBtn) {
     e.preventDefault();
 
     const newBerg = {
-      name: document.getElementById('berg').value.trim(),
+      name: document.getElementById('name').value.trim(),
     };
 
     fetch('/api/burgers', {
@@ -21,7 +24,7 @@ if (createBergBtn) {
       body: JSON.stringify(newBerg),
     }).then(() => {
       // Empty the form
-      document.getElementById('berg').value = '';
+      document.getElementById('name').value = '';
 
       console.log('You must eat this new Berg!!!');
       location.reload();
@@ -56,3 +59,4 @@ if(eatMehBtn) {
         });
       });
 }
+});
