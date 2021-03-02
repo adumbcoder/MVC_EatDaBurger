@@ -17,7 +17,8 @@
     
   ## Description:
   You enter the burger you'd like to eat in the text field. Once you eat it, hit the Eat meh! button and itll go to burgers you've eaten.
-
+![video](Video: https://youtu.be/doUJ_trVVhU)
+![screenshot](https://github.com/adumbcoder/MVC_EatDaBurger/blob/main/public/Eat%20Da%20Burger%20screenshot.png)
   ### Installation:
   Download the repo from https://github.com/adumbcoder/MVC_EatDaBurger or go to the website
 
