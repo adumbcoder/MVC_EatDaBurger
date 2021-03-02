@@ -1,15 +1,15 @@
-<div class="container">
+<div class="container" style="width: 90%;">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="centerThis">Eat Da Burger</h1>
+                <h1 class="centerThis" style="font-size: 8vh;">Eat Da Burger</h1>
             </div>
             <div class="col-md-4 centerImg">
-                <img src="./assets/burger.png">
+                <img src="./burger.svg">
             </div>  
         </div>  
         <div class="row">
             <div class="col-md-6">
-                <h2>Eat Deez Burgers</h2>
+                <h2 style="font-size: 5vh;">Eat Deez Burgers</h2>
                     <ul>
                         {{!-- runs thru the burgers table --}}
                         {{#each burgers}}
@@ -22,7 +22,7 @@
                     </ul>
             </div>
             <div class="col-md-6">
-                <h2>You ate the burger</h2>
+                <h2 style="font-size: 5vh;">You Ate the Burger!</h2>
                     <ul>
                         {{#each burgers}}
                         {{#if devoured}}
@@ -33,11 +33,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 centerThis">
+            <div class="col-md-6 centerForm">
                 <form id='create-form'>
-                    <label for="name">What kind of Burger?</label>
-                    <input type='text' name="name" id="name"></input>
-                    <button type="submit">Add new burger</button>
+                    <div class="row" style="text-align: center;">
+                        <label for="name">What kind of Burger?</label>
+                    </div>
+                    <div class="row">
+                        <input type='text' name="name" id="name"></input>
+                    </div>
+                    <div class="row">
+                        <button class="btnStyle" type="submit">Add new burger</button>
+                    </div>
                 </form>
             </div>
         </div>

@@ -1,18 +1,44 @@
 /* 2B2D42, 8D99AE, EDF2F4, EF233C, D90429*/
-body {
-    background-color: aliceblue;
+* {
+    font-family: 'Freckle Face', cursive;
+}
+
+h1 {
+    padding: 50px;
+    text-align: center;
 }
 
 img {
-    width: 25vh;
+    width: 50vh;
     height: 50vh;
 }
-.centerThis {
-    padding: 50px;
-    text-align: center;
-    font-size: 12vh;
-    border: 1px solid red;
-    
+
+.btnStyle {
+    border-radius: 10px;
+    background-color: #8d99ae;
+}
+
+input {
+    border-radius: 5%;
+}
+
+li {
+    font-size: 3vh;
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 5vh;
+}
+.container {
+    background-color: aliceblue;
+}
+
+.centerForm {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
 }
 
 .centerImg {
@@ -20,4 +46,16 @@ img {
     margin-right: auto;
     justify-content: center;
     
+}   
+
+.bergs,
+.getAteList {
+    background-color: #2B2D42;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+getAteBtn {
+    float: right;
 }

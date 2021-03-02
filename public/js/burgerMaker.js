@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const createBergBtn = document.getElementById('create-form');
 
 if (createBergBtn) {
+  
   createBergBtn.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    
     const newBerg = {
       name: document.getElementById('name').value.trim(),
     };
